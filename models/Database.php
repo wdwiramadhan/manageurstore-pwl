@@ -1,6 +1,7 @@
 <?php
 class Database{
     private $host = DB_HOST;
+    private $port = DB_PORT
     private $user = DB_USER;
     private $pass = DB_PASS;
     private $db_name = DB_NAME;
@@ -10,7 +11,7 @@ class Database{
     private $stmt;
     public function __construct(){
         // data base source name
-        $dsn = $this->db_driver.':host='.$this->host.';dbname='.$this->db_name;
+        $dsn = $this->db_driver.':host='.$this->host.':'.$this->port'.;dbname='.$this->db_name;
         $option = [
             PDO::ATTR_PERSISTENT => true,
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
