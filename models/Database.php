@@ -16,7 +16,7 @@ class Database{
                 $this->port, 
                 $this->db_name, 
                 $this->user, 
-                $this->pass;
+                $this->pass);
 
         $option = [
             PDO::ATTR_PERSISTENT => true,
