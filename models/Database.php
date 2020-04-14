@@ -5,7 +5,6 @@ class Database{
     private $user = DB_USER;
     private $pass = DB_PASS;
     private $db_name = DB_NAME;
-    private $db_driver = DB_DRIVER;
 
     private $dbh; //database handler
     private $stmt;
