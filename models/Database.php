@@ -17,13 +17,9 @@ class Database{
                 $this->db_name, 
                 $this->user, 
                 $this->pass);
-
-        $option = [
-            PDO::ATTR_PERSISTENT => true,
-            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
-        ];
         try{
-            $this->dbh = new PDO($dsn, $option);
+            $this->dbh = new PDO($dsn);
+            $this->dbh->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
         }catch(PDOException $e){
             die($e->getMessage());
         }
