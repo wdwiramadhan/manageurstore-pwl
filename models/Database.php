@@ -1,7 +1,7 @@
 <?php
 class Database{
     private $host = DB_HOST;
-    private $port = DB_PORT
+    private $port = DB_PORT;
     private $user = DB_USER;
     private $pass = DB_PASS;
     private $db_name = DB_NAME;
