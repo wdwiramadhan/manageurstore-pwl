@@ -4,12 +4,13 @@ class Database{
     private $user = DB_USER;
     private $pass = DB_PASS;
     private $db_name = DB_NAME;
+    private $db_driver = DB_DRIVER;
 
     private $dbh; //database handler
     private $stmt;
     public function __construct(){
         // data base source name
-        $dsn = 'mysql:host='.$this->host.';dbname='.$this->db_name;
+        $dsn = $this->db_driver.':host='.$this->host.';dbname='.$this->db_name;
         $option = [
             PDO::ATTR_PERSISTENT => true,
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION

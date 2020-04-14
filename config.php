@@ -6,7 +6,7 @@ if($_SERVER['HTTP_HOST'] != 'localhost'){
 }
 define('BASEURL', $TYPE . $_SERVER['HTTP_HOST'] . str_replace('public', '', dirname($_SERVER['SCRIPT_NAME'])));
 
-//db
+define('DB_DRIVER', 'mysql');
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'weblanjut');
 define('DB_USER', 'heyboy');
