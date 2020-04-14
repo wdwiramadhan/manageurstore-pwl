@@ -11,7 +11,7 @@ class Database{
     private $stmt;
     public function __construct(){
         // data base source name
-        $dsn = $this->db_driver.':host='.$this->host.':'.$this->port'.;dbname='.$this->db_name;
+        $dsn = $this->db_driver.':host='.$this->host.':'.$this->port.';dbname='.$this->db_name;
         $option = [
             PDO::ATTR_PERSISTENT => true,
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
