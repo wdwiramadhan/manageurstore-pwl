@@ -11,6 +11,6 @@ $DATABASE_URL=parse_url('postgres://kwjegjqlvxsumw:6ed8f56052aa234c3681bb54935ae
 
 define('DB_HOST', $DATABASE_URL["host"]);
 define('DB_PORT', $DATABASE_URL["port"]);
-define('DB_NAME', ltrim( $DATABASE_URL["path"],"/");
+define('DB_NAME', ltrim($DATABASE_URL["path"],"/");
 define('DB_USER',  $DATABASE_URL["user"]);
 define('DB_PASS',  $DATABASE_URL["pass"]);
