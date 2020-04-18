@@ -1,10 +1,6 @@
 <?php 
-if($_SERVER['HTTP_HOST'] != 'localhost'){
-  $TYPE = 'https://';
-}else{
-  $TYPE = 'http://';
-}
-define('BASEURL', $TYPE . $_SERVER['HTTP_HOST'] . str_replace('public', '', dirname($_SERVER['SCRIPT_NAME'])));
+
+define('BASEURL', 'http://'. $_SERVER['HTTP_HOST'] . str_replace('public', '', dirname($_SERVER['SCRIPT_NAME'])));
 
 define('DB_DRIVER', 'mysql');
 define('DB_HOST', 'localhost');

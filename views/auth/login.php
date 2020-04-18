@@ -11,8 +11,8 @@
   <body class="hold-transition login-page">
     <div class="login-box">
       <div class="login-logo">
-        <a href="../../index2.html"><b>Welcome</b></a>
-      </div>
+        <a href=""><b>Welcome</b></a>
+      </div>  
       <!-- /.login-logo -->
       <div class="card">
         <div class="card-body login-card-body">

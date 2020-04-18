@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <title><?= $data['title'] ?></title>
     <link rel="stylesheet" href="<?= BASEURL; ?>/public/css/adminlte.css" >
     <link rel="stylesheet" href="<?= BASEURL; ?>/public/plugins/fontawesome/css/all.min.css">

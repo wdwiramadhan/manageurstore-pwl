@@ -16,7 +16,6 @@ class AuthModel{
   {    
       $email = $data['email'];
       $password = $data['password'];
-      $set_remember_me_cookie = $data['remember_me'];
       $results = $this->getUserByEmail($email);
       if($results){
         $verify = password_verify($password, $results['password']);
