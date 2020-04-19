@@ -11,7 +11,7 @@
       return $this->db->resultSet();
     }
     public function store($data){
-      if($data['role']){
+      if(isset($data['role'])){
         $role = $data['role'];
       }else{
         $role = 'admin';
