@@ -38,15 +38,15 @@
               <p>Konsumen</p>
             </a>
           </li>
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
+          <li class="nav-item has-treeview <?= strtolower($_GET['url']) == 'user' ? 'menu-open': ''?>">
+            <a href="#" class="nav-link <?= strtolower($_GET['url']) == 'user' ? 'active': ''?>">
               <i class="nav-icon fas fa-fw fa-cog"></i>
               <p>Master<i class="right fas fa-angle-left"></i>
               </p>
             </a>
-            <ul class="nav nav-treeview">
+            <ul class="nav nav-treeview ">
               <li class="nav-item">
-                <a href="./index.html" class="nav-link">
+                <a href="<?= BASEURL ?>/User" class="nav-link <?= strtolower($_GET['url']) == 'user' ? 'active': ''?>">
                   <i class="nav-icon fas fa-fw fa-users-cog"></i>
                   <p>Admin Management</p>
                 </a>

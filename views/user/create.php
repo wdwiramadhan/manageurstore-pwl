@@ -3,12 +3,12 @@
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1 class="m-0 text-dark">Tambah Konsumen</h1>
+          <h1 class="m-0 text-dark">Tambah Admin</h1>
         </div><!-- /.col -->
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
             <li class="breadcrumb-item"><a href="<?= BASEURL ?>/Dashboard">Home</a></li>
-            <li class="breadcrumb-item"><a href="<?= BASEURL ?>/Konsumen">Konsumen</a></li>
+            <li class="breadcrumb-item"><a href="<?= BASEURL ?>/User">Admin</a></li>
             <li class="breadcrumb-item active">Tambah</li>
           </ol>
         </div><!-- /.col -->
@@ -23,42 +23,22 @@
           <div class="card-header">
             <div class="row">
               <div class="col-md-6">
-                <h5>Detail Konsumen</h5>
+                <h5>Detail Admin</h5>
               </div>
               <div class="col-md-6">
-                <a href="<?= BASEURL ?>/Konsumen" class="btn btn-primary btn-sm float-right">Kembali</a>
+                <a href="<?= BASEURL ?>/User" class="btn btn-primary btn-sm float-right">Kembali</a>
               </div>
             </div>
           </div>
           <div class="card-body">
-            <form action="<?= BASEURL ?>/Konsumen/store" method="post">
+            <form action="<?= BASEURL ?>/User/store" method="post">
               <div class="form-group">
                 <div class="row">
                   <div class="col-md-2">
-                    <label for="kode">Kode</label>
+                    <label for="name">Nama</label>
                   </div>
                   <div class="col-md-10">
-                    <input type="text" class="form-control" name="id" id="kode" placeholder="Kode konsumen" required>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="row">
-                  <div class="col-md-2">
-                    <label for="nama">Nama</label>
-                  </div>
-                  <div class="col-md-10">
-                    <input type="text" class="form-control" name="nama" id="nama" placeholder="Nama konsumen">
-                  </div>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="row">
-                  <div class="col-md-2">
-                    <label for="phone">No. HP</label>
-                  </div>
-                  <div class="col-md-10">
-                    <input type="text" class="form-control" name="phone" id="phone" placeholder="Example: 085727888999">
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Name">
                   </div>
                 </div>
               </div>
@@ -75,30 +55,24 @@
               <div class="form-group">
                 <div class="row">
                   <div class="col-md-2">
-                    <label for="alamat">Alamat</label>
+                    <label for="password">Password</label>
                   </div>
                   <div class="col-md-10">
-                    <input type="text" class="form-control" name="alamat" id="alamat" placeholder="Alamat lengkap">
+                    <input type="text" class="form-control" name="password" id="password" value="admin123">
                   </div>
                 </div>
               </div>
               <div class="form-group">
                 <div class="row">
                   <div class="col-md-2">
-                    <label for="Kota">Kota</label>
+                    <label for="role">Role</label>
                   </div>
-                  <div class="col-md-10">
-                    <input type="text" class="form-control" name="kota" id="Kota" placeholder="Kota">
-                  </div>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="row">
-                  <div class="col-md-2">
-                    <label for="kode_pos">Kode Pos</label>
-                  </div>
-                  <div class="col-md-10">
-                    <input type="text" class="form-control" name="kode_pos" id="kode_pos" placeholder="Kode pos">
+                  <div class="col-md-10">             
+                    <select class="form-control" id="role" name="role">
+                      <option>--- Select Role ---</option>
+                      <option value="super admin">super admin</option>
+                      <option value="admin">admin</option>
+                    </select>
                   </div>
                 </div>
               </div>

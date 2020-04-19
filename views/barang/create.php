@@ -38,7 +38,7 @@
                     <label for="kode">Kode Barang</label>
                   </div>
                   <div class="col-md-10">
-                    <input type="text" class="form-control" name="id" id="kode" placeholder="Kode barang">
+                    <input type="text" class="form-control" name="id" id="kode" placeholder="Kode barang" required>
                   </div>
                 </div>
               </div>

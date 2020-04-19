@@ -18,7 +18,7 @@
   <ul class="navbar-nav ml-auto">
     <li class="nav-item">
       <a class="nav-link" href="<?= BASEURL?>/Auth/logout">
-        <i class="fas fa-fw fa-sign-out-alt"></i>
+        <i class="fas fa-fw fa-power-off"></i>
         Logout
       </a>
     </li>

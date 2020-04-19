@@ -8,4 +8,5 @@ require_once './config.php';
 require_once './utility/Session.php';
 require_once './utility/Authenticate.php';
 
+if( !session_id())session_start();
 $router = new Router;

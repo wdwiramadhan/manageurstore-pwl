@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <title><?= $data['title'] ?></title>
     <link rel="stylesheet" href="<?= BASEURL; ?>/public/css/adminlte.css" >
     <link rel="stylesheet" href="<?= BASEURL; ?>/public/plugins/fontawesome/css/all.min.css">
@@ -17,6 +18,16 @@
       <div class="card">
         <div class="card-body login-card-body">
           <p class="login-box-msg">Sign in to start your session</p>
+          <?php 
+            if(isset($_SESSION['flash'])){
+              echo '<div class="alert alert-' .$_SESSION['flash']['tipe']. ' alert-dismissible fade show" role="alert">'.$_SESSION['flash']['pesan'].'
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              </div>';
+              unset($_SESSION['flash']);
+            }
+          ?>
           <form action="<?= BASEURL?>/Auth/_login" method="post">
             <div class="input-group mb-3">
               <input type="email" class="form-control" name="email" placeholder="Email">
@@ -51,7 +62,7 @@
             </div>
           </form>
           <p class="mb-0">
-            <a href="register.html" class="text-center">Register a new membership</a>
+            <a href="<?= BASEURL ?>/Auth/register" class="text-center">Register a new membership</a>
           </p>
         </div>
         <!-- /.login-card-body -->
