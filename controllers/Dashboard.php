@@ -4,8 +4,7 @@ class Dashboard extends Controller{
     Authenticate::isLoggedIn();
   }
   public function index(){
-    $data['totalkonsumen'] = $this->model('KonsumenModel')->countAll();
-    $data['totalbarang'] = $this->model('BarangModel')->countAll();
+    $data['totalsupplier'] = $this->model('SupplierModel')->countAll();
     $this->view('layouts/header', ['title' => 'Dashboard']);
     $this->view('layouts/topbar');
     $this->view('layouts/sidebar');

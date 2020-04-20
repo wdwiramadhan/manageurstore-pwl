@@ -3,12 +3,12 @@
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1 class="m-0 text-dark">Tambah Barang</h1>
+          <h1 class="m-0 text-dark">Tambah Supplier</h1>
         </div><!-- /.col -->
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
             <li class="breadcrumb-item"><a href="<?= BASEURL ?>/Dashboard">Home</a></li>
-            <li class="breadcrumb-item"><a href="<?= BASEURL ?>/Barang">Barang</a></li>
+            <li class="breadcrumb-item"><a href="<?= BASEURL ?>/Supplier">Supplier</a></li>
             <li class="breadcrumb-item active">Tambah</li>
           </ol>
         </div><!-- /.col -->
@@ -23,82 +23,92 @@
           <div class="card-header">
             <div class="row">
               <div class="col-md-6">
-                <h5>Detail Barang</h5>
+                <h5>Detail Supplier</h5>
               </div>
               <div class="col-md-6">
-                <a href="<?= BASEURL ?>/Barang" class="btn btn-primary btn-sm float-right">Kembali</a>
+                <a href="<?= BASEURL ?>/Supplier" class="btn btn-primary btn-sm float-right">Kembali</a>
               </div>
             </div>
           </div>
           <div class="card-body">
-            <form action="<?= BASEURL ?>/Barang/store" method="post">
+            <form action="<?= BASEURL ?>/Supplier/store" method="post">
               <div class="form-group">
                 <div class="row">
                   <div class="col-md-2">
-                    <label for="kode">Kode Barang</label>
+                    <label for="kode">Kode</label>
                   </div>
                   <div class="col-md-10">
-                    <input type="text" class="form-control" name="id" id="kode" placeholder="Kode barang" required>
+                    <input type="text" class="form-control" name="kd_sup" id="kode" placeholder="Kode Supllier" required>
                   </div>
                 </div>
               </div>
               <div class="form-group">
                 <div class="row">
                   <div class="col-md-2">
-                    <label for="nama">Nama Barang</label>
+                    <label for="nama">Nama</label>
                   </div>
                   <div class="col-md-10">
-                    <input type="text" class="form-control" name="nama" id="nama" placeholder="Nama barang">
+                    <input type="text" class="form-control" name="nm_sup" id="nama" placeholder="Nama">
                   </div>
                 </div>
               </div>
               <div class="form-group">
                 <div class="row">
                   <div class="col-md-2">
-                    <label for="satuan">Satuan</label>
+                    <label for="alm_sup">Alamat</label>
                   </div>
                   <div class="col-md-10">
-                    <input type="text" class="form-control" name="satuan" id="satuan" placeholder="Example: buah, cm, inch">
+                    <input type="text" class="form-control" name="alm_sup" id="alm_sup" placeholder="Alamat">
                   </div>
                 </div>
               </div>
               <div class="form-group">
                 <div class="row">
                   <div class="col-md-2">
-                    <label for="harga">Harga Jual</label>
+                    <label for="kota_sup">Kota</label>
                   </div>
                   <div class="col-md-10">
-                    <input type="text" class="form-control" name="harga" id="harga" placeholder="Harga jual">
+                    <input type="text" class="form-control" name="kota_sup" id="kota_sup" placeholder="Kota">
                   </div>
                 </div>
               </div>
               <div class="form-group">
                 <div class="row">
                   <div class="col-md-2">
-                    <label for="harga_beli">Harga Beli</label>
+                    <label for="kode_pos">Kode Pos</label>
                   </div>
                   <div class="col-md-10">
-                    <input type="text" class="form-control" name="harga_beli" id="harga_beli" placeholder="Harga beli">
+                    <input type="text" class="form-control" name="kode_pos" id="kode_pos" placeholder="Kode Pos">
                   </div>
                 </div>
               </div>
               <div class="form-group">
                 <div class="row">
                   <div class="col-md-2">
-                    <label for="stock">Stock</label>
+                    <label for="telp_sup">Telephone</label>
                   </div>
                   <div class="col-md-10">
-                    <input type="text" class="form-control" name="stock" id="stock" placeholder="Stock">
+                    <input type="text" class="form-control" name="telp_sup" id="telp_sup" placeholder="Telephone">
                   </div>
                 </div>
               </div>
               <div class="form-group">
                 <div class="row">
                   <div class="col-md-2">
-                    <label for="stock_min">Stock  min</label>
+                    <label for="hp_sup">Handphone</label>
                   </div>
                   <div class="col-md-10">
-                    <input type="text" class="form-control" name="stock_min" id="stock_min" placeholder="Stock min">
+                    <input type="text" class="form-control" name="hp_sup" id="hp_sup" placeholder="Handphone">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="row">
+                  <div class="col-md-2">
+                    <label for="email">Email</label>
+                  </div>
+                  <div class="col-md-10">
+                    <input type="email" class="form-control" name="email_sup" id="email" placeholder="Email">
                   </div>
                 </div>
               </div>

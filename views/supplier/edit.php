@@ -3,12 +3,12 @@
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1 class="m-0 text-dark">Edit Konsumen</h1>
+          <h1 class="m-0 text-dark">Edit Supplier</h1>
         </div><!-- /.col -->
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
             <li class="breadcrumb-item"><a href="<?= BASEURL ?>/Dashboard">Home</a></li>
-            <li class="breadcrumb-item"><a href="<?= BASEURL ?>/Konsumen">Konsumen</a></li>
+            <li class="breadcrumb-item"><a href="<?= BASEURL ?>/Supplier">Supplier</a></li>
             <li class="breadcrumb-item active">Edit</li>
           </ol>
         </div><!-- /.col -->
@@ -23,22 +23,22 @@
           <div class="card-header">
             <div class="row">
               <div class="col-md-6">
-                <h5>Detail Konsumen</h5>
+                <h5>Detail Supplier</h5>
               </div>
               <div class="col-md-6">
-                <a href="<?= BASEURL ?>/Konsumen" class="btn btn-primary btn-sm float-right">Kembali</a>
+                <a href="<?= BASEURL ?>/Supplier" class="btn btn-primary btn-sm float-right">Kembali</a>
               </div>
             </div>
           </div>
           <div class="card-body">
-            <form action="<?= BASEURL ?>/Konsumen/update/<?= $data['id'] ?>" method="post">
+            <form action="<?= BASEURL ?>/Supplier/update/<?= $data['kd_sup'] ?>" method="post">
               <div class="form-group">
                 <div class="row">
                   <div class="col-md-2">
                     <label for="kode">Kode</label>
                   </div>
                   <div class="col-md-10">
-                    <input type="text" class="form-control" name="id" id="kode" value="<?= $data['id'] ?>" readonly>
+                    <input type="text" class="form-control" name="kd_sup" id="kode" value="<?= $data['kd_sup'] ?>" readonly>
                   </div>
                 </div>
               </div>
@@ -48,47 +48,27 @@
                     <label for="nama">Nama</label>
                   </div>
                   <div class="col-md-10">
-                    <input type="text" class="form-control" name="nama" id="nama" value="<?= $data['nama'] ?>">
+                    <input type="text" class="form-control" name="nm_sup" id="nama" value="<?= $data['nm_sup'] ?>">
                   </div>
                 </div>
               </div>
               <div class="form-group">
                 <div class="row">
                   <div class="col-md-2">
-                    <label for="phone">No. HP</label>
+                    <label for="alm_sup">Alamat</label>
                   </div>
                   <div class="col-md-10">
-                    <input type="text" class="form-control" name="phone" id="phone" value="<?= $data['phone'] ?>">
+                    <input type="text" class="form-control" name="alm_sup" id="alm_sup" value="<?= $data['alm_sup'] ?>">
                   </div>
                 </div>
               </div>
               <div class="form-group">
                 <div class="row">
                   <div class="col-md-2">
-                    <label for="email">Email</label>
+                    <label for="kota_sup">Kota</label>
                   </div>
                   <div class="col-md-10">
-                    <input type="text" class="form-control" name="email" id="email" value="<?= $data['email'] ?>">
-                  </div>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="row">
-                  <div class="col-md-2">
-                    <label for="alamat">Alamat</label>
-                  </div>
-                  <div class="col-md-10">
-                    <input type="text" class="form-control" name="alamat" id="alamat" value="<?= $data['alamat'] ?>">
-                  </div>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="row">
-                  <div class="col-md-2">
-                    <label for="Kota">Kota</label>
-                  </div>
-                  <div class="col-md-10">
-                    <input type="text" class="form-control" name="kota" id="Kota" value="<?= $data['kota'] ?>">
+                    <input type="text" class="form-control" name="kota_sup" id="kota_sup" value="<?= $data['kota_sup'] ?>">
                   </div>
                 </div>
               </div>
@@ -99,6 +79,36 @@
                   </div>
                   <div class="col-md-10">
                     <input type="text" class="form-control" name="kode_pos" id="kode_pos" value="<?= $data['kode_pos'] ?>">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="row">
+                  <div class="col-md-2">
+                    <label for="telp_sup">Telephone</label>
+                  </div>
+                  <div class="col-md-10">
+                    <input type="text" class="form-control" name="telp_sup" id="telp_sup" value="<?= $data['telp_sup'] ?>">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="row">
+                  <div class="col-md-2">
+                    <label for="hp_sup">Handphone</label>
+                  </div>
+                  <div class="col-md-10">
+                    <input type="text" class="form-control" name="hp_sup" id="hp_sup" value="<?= $data['hp_sup'] ?>">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="row">
+                  <div class="col-md-2">
+                    <label for="email">Email</label>
+                  </div>
+                  <div class="col-md-10">
+                    <input type="email" class="form-control" name="email_sup" id="email" value="<?= $data['email_sup'] ?>">
                   </div>
                 </div>
               </div>

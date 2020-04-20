@@ -2,7 +2,7 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="<?= BASEURL ?>/Dashboard" class="brand-link text-center">
-      <span class="brand-text font-weight-bold"><b>Store Management</b></span>
+      <span class="brand-text font-weight-bold"><b>Ayo Bangun</b></span>
     </a>
 
     <!-- Sidebar -->
@@ -27,15 +27,9 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="<?= BASEURL ?>/Barang" class="nav-link <?= strtolower($_GET['url']) == 'barang' ? 'active': ''?>">
-              <i class="nav-icon fas fa-fw fa-box"></i>
-              <p>Barang</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="<?= BASEURL ?>/Konsumen" class="nav-link  <?= strtolower($_GET['url']) == 'konsumen' ? 'active': ''?>">
+            <a href="<?= BASEURL ?>/Supplier" class="nav-link <?= strtolower($_GET['url']) == 'supplier' ? 'active': ''?>">
               <i class="nav-icon fas fa-fw fa-users"></i>
-              <p>Konsumen</p>
+              <p>Supplier</p>
             </a>
           </li>
           <li class="nav-item has-treeview <?= strtolower($_GET['url']) == 'user' ? 'menu-open': ''?>">

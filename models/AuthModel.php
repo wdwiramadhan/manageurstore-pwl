@@ -1,5 +1,4 @@
 <?php
-
 class AuthModel{
   private $table = 'users';
   private $db;
